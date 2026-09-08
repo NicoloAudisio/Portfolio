@@ -1,344 +1,583 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Audisio Nicolò portfolio.">
-        <meta name="author" content="Devcrud">
-        <title>Audisio Nicolò</title>
-        <!-- font icons -->
-        <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-        <!-- Bootstrap + style main styles -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!-- Typed.js -->
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-        <!-- * Navbar -->
-        <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-            <div class="container">
-                <a class="logo" href="#">Nicolò</a>
-                <ul class="nav">
-                    <li class="item">
-                        <a class="link" href="#home">Home</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="#about">About</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="#xp">Esperienze</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="#service">Servizi</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="#contact">Contatti</a>
-                    </li>
-                    <li class="item ml-md-3">
-                        <a href="/AudisioNicolo_cv.pdf" class="btn btn-primary" download>Download CV</a>
-                    </li>
-                </ul>
-                <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                    <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                    </div>
-                </a>
-            </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Nicolò Audisio — Sviluppatore software e Autista Soccorritore. Volontario e Milite della Croce Rossa Italiana, coordinamento protezione civile, ricerca dispersi e logistica eventi.">
+    <meta name="author" content="Nicolò Audisio">
+    <title>Nicolò Audisio — Sviluppatore &amp; Soccorritore CRI</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nicolò Audisio — Sviluppatore &amp; Soccorritore CRI">
+    <meta property="og:description" content="Perito informatico, sviluppatore software e Autista Soccorritore. Volontario e Milite della Croce Rossa Italiana.">
+    <meta property="og:image" content="assets/imgs/about-nicolo.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23E2001A'/%3E%3Crect x='13' y='6' width='6' height='20' fill='white'/%3E%3Crect x='6' y='13' width='20' height='6' fill='white'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body id="home">
+
+<!-- Icon sprite -->
+<svg style="display:none" aria-hidden="true">
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 2a12 12 0 0 0 6 6l2-2.5 5 2v4a1 1 0 0 1-1 1A17 17 0 0 1 3 5a1 1 0 0 1 1-1z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.1c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21H18v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21H10V9z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.2h2.4l.4-2.8h-2.8V9.1c0-.8.2-1.4 1.4-1.4h1.5V5.2C15.9 5.1 15 5 14 5c-2.4 0-4 1.5-4 4.1v1.9H7.6v2.8H10V21h3.5z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 3H22l-6.9 7.9L22.6 21H16l-5.2-6.8L4.8 21H2l7.4-8.4L1.6 3h6.8l4.7 6.2L18.9 3z"/></symbol>
+    <symbol id="i-threads" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5c-4.7 0-7.3 3.2-7.3 8.5s2.6 8.5 7.3 8.5c4 0 6.3-2.1 6.6-5.3.3-3.2-1.4-4.9-4.3-5.2-2.3-.2-4 .7-4 2.5 0 1.4 1.2 2.1 2.7 1.9 1.7-.2 2.6-1.4 2.5-3.3"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.35-3.37-1.35-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.35 1.08 2.92.83.1-.65.35-1.08.63-1.33-2.22-.25-4.56-1.1-4.56-4.93 0-1.1.38-1.98 1.03-2.68-.1-.25-.45-1.28.1-2.65 0 0 .85-.27 2.78 1.03a9.6 9.6 0 0 1 5.06 0c1.93-1.3 2.78-1.03 2.78-1.03.55 1.37.2 2.4.1 2.65.65.7 1.03 1.58 1.03 2.68 0 3.84-2.35 4.68-4.58 4.93.36.3.68.92.68 1.85v2.75c0 .26.18.58.68.48A10 10 0 0 0 12 2z"/></symbol>
+    <symbol id="i-drone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="4" cy="20" r="2"/><circle cx="20" cy="20" r="2"/><line x1="5.4" y1="5.4" x2="10.5" y2="10.5"/><line x1="18.6" y1="5.4" x2="13.5" y2="10.5"/><line x1="5.4" y1="18.6" x2="10.5" y2="13.5"/><line x1="18.6" y1="18.6" x2="13.5" y2="13.5"/><circle cx="12" cy="12" r="2.6" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-radio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="13" x2="12" y2="4"/><circle cx="12" cy="4" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="16" r="3"/><path d="M8 9.5a5.6 5.6 0 0 1 8 0"/><path d="M5 6.5a9.5 9.5 0 0 1 14 0"/></symbol>
+    <symbol id="i-idcard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8" cy="12" r="2"/><line x1="5" y1="16" x2="11" y2="16"/><line x1="14" y1="10" x2="19" y2="10"/><line x1="14" y1="14" x2="19" y2="14"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 4.4-8.8 10.4-8.8 10.4S3.2 13 3.2 8.6a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3z"/><line x1="7" y1="11" x2="10" y2="11"/><line x1="8.5" y1="9.5" x2="8.5" y2="12.5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3.5v5.2c0 5-3.4 8-8 9.3-4.6-1.3-8-4.3-8-9.3V6.5L12 3z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17.5" cy="9" r="2.5"/><path d="M15.5 14a5.5 5.5 0 0 1 5.5 6"/></symbol>
+    <symbol id="i-waves" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0"/><path d="M2 14c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0"/><path d="M2 20c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 8 4 12 9 16"/><polyline points="15 8 20 12 15 16"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><circle cx="7" cy="7" r=".6" fill="currentColor" stroke="none"/><circle cx="7" cy="17" r=".6" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s-6 5.5-6 11a6 6 0 0 0 12 0c0-2-1-3-1-3s0 2-1.5 2c-1 0-1-1.2-1-2.2 0-2-2.5-3.8-2.5-7.8z"/></symbol>
+    <symbol id="i-plane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3l8 8-5 1.5 3 6-3 1-4-6-4 3v-3l-4-1.5 6-2-1-6 3-1z"/></symbol>
+    <symbol id="i-bike" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M12 17.5l3-7h3M12 17.5L9 10l3-4 3 3h-4"/></symbol>
+    <symbol id="i-tent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l8-15 8 15"/><path d="M2 20h20"/><path d="M12 5v15"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 18H2L12 3z"/><line x1="12" y1="10" x2="12" y2="14"/><line x1="12" y1="17" x2="12" y2="17.2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5L7 21l5-2.5L17 21l-1.5-8.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 16 14"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><line x1="3" y1="12" x2="21" y2="12"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7.5" width="19" height="12" rx="2"/><path d="M8 7.5V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1.5"/><line x1="2.5" y1="12.5" x2="21.5" y2="12.5"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 8.5 0 1 0 0 17c1.4 0 2-1 2-2s-.5-1.5-.5-2.3c0-1 .8-1.7 1.8-1.7H17a4 4 0 0 0 4-4c0-4-4-7-9-7z"/><circle cx="7.5" cy="10.5" r="1" fill="currentColor" stroke="none"/><circle cx="10.5" cy="7" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="8" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="9" x2="9" y2="20"/></symbol>
+    <symbol id="i-ambulance" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="9" width="14" height="8" rx="1.2"/><path d="M15.5 12h4l2.5 3v2h-6.5z"/><circle cx="6" cy="18.5" r="1.6"/><circle cx="17" cy="18.5" r="1.6"/><line x1="6.5" y1="11" x2="6.5" y2="14.5"/><line x1="4.7" y1="12.7" x2="8.3" y2="12.7"/></symbol>
+    <symbol id="i-dumbbell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="12" x2="18" y2="12"/><rect x="2" y="9" width="3" height="6" rx="1"/><rect x="19" y="9" width="3" height="6" rx="1"/><rect x="5" y="7" width="2.5" height="10" rx="1"/><rect x="16.5" y="7" width="2.5" height="10" rx="1"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><rect x="9" y="2.5" width="6" height="3" rx="1"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="16" y2="15"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><line x1="9" y1="4" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="20"/></symbol>
+</svg>
+
+<!-- Navbar -->
+<header class="navbar" id="navbar">
+    <div class="container navbar-row">
+        <a class="brand" href="#home"><span class="brand-mark">N</span>Nicolò Audisio</a>
+        <nav class="nav" id="nav">
+            <a class="nav-link" href="#about">Chi sono</a>
+            <a class="nav-link" href="#xp">Esperienza</a>
+            <a class="nav-link" href="#interventi">Interventi</a>
+            <a class="nav-link" href="#certificazioni">Certificazioni</a>
+            <a class="nav-link" href="#service">Servizi</a>
+            <a class="nav-link" href="#portfolio">Progetti</a>
+            <a class="nav-link" href="#contact">Contatti</a>
         </nav>
-        <!-- ! End Navbar -->
+        <a href="curriculum_NA.pdf" class="btn btn-primary btn-sm nav-cta" download>Scarica CV</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Apri menu">
+            <svg class="icon"><use href="#i-menu"/></svg>
+        </button>
+    </div>
+</header>
 
-        <!-- * Header -->
-        <header id="home" class="header">
-            <div class="overlay"></div>
-            <div class="header-content container">
-                <h1 class="header-title">
-                    <span class="down">Nicolò Audisio</span>
-                </h1>
-                <p class="header-subtitle">Sono <span class="typed" data-typed-items="Developer, UX/UI Designer, Fotografo, Developer">Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+<!-- Hero -->
+<section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-grid">
+        <div class="hero-content" data-reveal>
+            <p class="eyebrow"><span class="dot"></span>Disponibile per nuovi progetti &amp; collaborazioni</p>
+            <h1 class="hero-title">NICOLÒ<br>AUDISIO</h1>
+            <p class="hero-subtitle">Sono <span class="typed" data-typed-items="Perito Informatico,Sviluppatore Software,Autista Soccorritore,Dipendente Croce Rossa,Pilota Droni"></span><span class="typed-cursor"></span></p>
+            <p class="hero-text">Perito informatico e Autista Soccorritore, dipendente della Croce Rossa Italiana — Comitato di Cuneo. Volontario e Milite del Corpo Militare della Croce Rossa Italiana: ricerca dispersi, protezione civile, soccorso 118 e logistica di eventi a livello internazionale.</p>
+            <div class="hero-actions">
+                <a href="curriculum_NA.pdf" class="btn btn-primary" download>Scarica CV<svg class="icon icon-sm"><use href="#i-arrow"/></svg></a>
+                <a href="#contact" class="btn btn-outline">Contattami</a>
             </div>
-        </header>
-        <!-- ! End header -->
-
-        <!-- * About section -->
-        <section class="section pt-0" id="about">
-            <!-- * Container -->
-            <div class="container text-center">
-                <!-- * About wrapper -->
-                <div class="about">
-                    <div class="about-img-holder">
-                        <img src="assets/imgs/profile-img.jpeg" class="about-img">
-                    </div>
-                    <div class="about-caption">
-                        <p class="section-subtitle">Chi sono?</p>
-                        <h2 class="section-title mb-3">About Me</h2>
-                        
-                        <p>
-                            Diplomato all’ITIS “G. Rivoira” di Verzuolo, indirizzo Informatico. </br>
-                            Praticità nell’ambito della fotografia e della produzione video. Conoscenze approfondite nell’ambito del soccorso e del primo soccorso in quanto soccorritore volontario presso la Croce Rossa di Manta e Sampeyre. </br>
-                            Conoscenze dei linguaggi di programmazione e framework: C, Bash, HTML5, CSS3, JavaScript, PHP, MongoDB, React Native, Java, React, Angular, Python,
-                            Bootstrap 4 e 5. </br>
-                            Praticità con Audacity, Canva, DaVinci Resolve, Figma, Illustrator, InDesigne, Pacchetto Office, Premiere Pro, Xd.
-                        </p>
-                        <a href="/AudisioNicolo_cv.pdf" class="btn-rounded btn btn-outline-primary mt-4 download_cv" download>Download CV</a>
-                    </div>
-                </div>
-                <!-- ! End of about wrapper -->
-            </div>
-            <!-- ! End of container -->
-            <section id="xp" class="resume section">
-                <!-- * Section Title -->
-                <div class="container text-center">
-                    <p class="section-subtitle">Il mio percorso?</p>
-                    <h6 class="section-title mb-6">Esperienze</h6>
-                </div>
-                <!-- ! End Section Title -->
-            
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                      <h3 class="resume-title">Scuole</h3>
-                      <div class="resume-item">
-                        <h4>Istituto Comprensivo di Venasca e Costigliole Saluzzo</h4>
-                        <h5>2016 - 2019</h5>
-                        <p><em>Via Busca, 3, 12024 Costigliole Saluzzo CN</em></p>
-                        <p>Diplima di licenza conclusiva del primo ciclo di istruzione</p>
-                      </div>
-                      <!-- Edn Resume Item -->
-                      <div class="resume-item">
-                        <h4>I.T.I.S "G. Rivoira"</h4>
-                        <h5>2019 - 2024</h5>
-                        <p><em>Via IV Novembre, 30, 12039 Verzuolo CN</em></p>
-                        <p>Diploma da perito informatico</p>
-                      </div>
-                      <!-- Edn Resume Item -->
-          
-                      <h3 class="resume-title">Attestati</h3>
-                      <div class="resume-item">
-                        <h4>BOOLEAN CODING WEEK</h4>
-                        <h5>2023</h5>
-                      </div>
-                      <!-- Edn Resume Item -->
-                      <div class="resume-item">
-                        <h4>ERP System Developer</h4>
-                        <h5>2023 - 2024</h5>
-                      </div>
-                      <!-- Edn Resume Item -->
-                    </div>
-          
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                      <h3 class="resume-title">Esperienze Lavorative</h3>
-                      <div class="resume-item">
-                        <h4>Scotta s.p.a</h4>
-                        <h5>2023, PCTO</h5>
-                        <p><em>Via Monviso, 41, 12020 Villafalletto CN</em></p>
-                        <ul>
-                          <li>Realizzazione di un sito web per la gestione dei dati contenuti in un databse su alcune vele di un campo di fotovoltaici tramite HTML5, CSS3, JavaScript e Python.</li>
-                          <li>Realizzazione di alcune pagine di gestione del magazzino utilizzando il framework Angular.</li>
-                        </ul>
-                      </div>
-                      <!-- End Resume Item -->
-          
-                      <div class="resume-item">
-                        <h4>GRAPH ART S.N.C.</h4>
-                        <h5>2022, PCTO</h5>
-                        <p><em>Via D. Galimberti, 75, 12030 Manta CN</em></p>
-                        <ul>
-                          <li>Progettazione di locandine e grafiche per siti web tramite software di illustrazione e manipolazione di immagini, Illustrator e Photoshop.</li>
-                          <li>Magazziniere.</li>
-                        </ul>
-                      </div>
-                      <!-- End Resume Item -->
-          
-                      <div class="resume-item">
-                        <h4>Servizi Fiscali S.R.L.S.</h4>
-                        <h5>2019 - Oggi</h5>
-                        <p><em>Corso Roma, 25/B, 12037 Saluzzo CN</em></p>
-                        <ul>
-                          <li>Inserimento dati per pratiche fiscali tramite software forniti del nazionale.</li>
-                          <li>Realizzazione di tabelle e documenti tramite il pacchetto Office.</li>
-                        </ul>
-                      </div>
-                      <!-- End Resume Item -->
-                    </div>
-                  </div>       
-                </div>
-              </section>
-        </section>
-        <!-- ! End About section -->
-
-        <!-- * Service -->
-        <section class="section" id="service">
-            <div class="container text-center">
-                <p class="section-subtitle">Cosa faccio?</p>
-                <h6 class="section-title mb-6">Servizi</h6>
-                <!-- * row -->
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-card">
-                            <div class="body">
-                                <img src="assets/imgs/pencil-case.svg" class="icon">
-                                <h6 class="title">Grafica</h6>
-                                <p class="subtitle">Realizzazione di grafiche a proprio piacimento.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-card">
-                            <div class="body">
-                                <img src="assets/imgs/responsive.svg" class="icon">
-                                <h6 class="title">UX / UI</h6>
-                                <p class="subtitle">Realizzazione di progetto UX / UI per applicazioni mobile, dekstop o siti web.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-card">
-                            <div class="body">
-                                <img src="assets/imgs/toolbox.svg" class="icon">
-                                <h6 class="title">Siti vetrina</h6>
-                                <p class="subtitle">Realizzazione di siti web per presentare la propria azienda.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ! End of row -->
-            </div>
-        </section>
-        <!-- ! End of Service -->
-
-        <!-- * Portfolio -->
-        <section class="section" id="portfolio">
-            <div class="container text-center">
-                <p class="section-subtitle">Progetti realizzati?</p>
-                <h6 class="section-title mb-6">Portfolio</h6>
-                <!-- row -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href="https://follow-me-itis-rivoira.web.app" target="_blank" class="portfolio-card">
-                            <img src="assets/imgs/followMe.png" class="portfolio-card-img">
-                            <span class="portfolio-card-overlay">
-                                <span class="portfolio-card-caption">
-                                    <h4>Web Designing</h5>
-                                        <p class="font-weight-normal">Progetto scolastico per la realizzazione di un navigatore interno all'istituto.</p>
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="https://nicoloaudisio.github.io/motorimessaCadore/" target="_blank" class="portfolio-card">
-                            <img class="portfolio-card-img" src="assets/imgs/logoMotorimessa.png" class="img-responsive rounded">
-                            <span class="portfolio-card-overlay">
-                                <span class="portfolio-card-caption">
-                                    <h4>Web Designing</h5>
-                                        <p class="font-weight-normal">Realizzazione di un sito vetrina per un garage torinese con servizio di NCC.</p>
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <!-- end of row -->
-            </div>
-            <!-- ! End of container -->
-        </section>
-        <!-- ! end of Portfolio -->
-
-        <!-- * Contact -->
-        <section class="section" id="contact">
-            <div class="container text-center">
-                <p class="section-subtitle">Vuoi commissionarmi un lavoro?</p>
-                <h6 class="section-title mb-6">Contattami</h6>
-                <!-- * row -->
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-card">
-                            <div class="body">
-                                <a href="mailto:audisio.nicolo@gmail.com">
-                                    <img src="assets/imgs/email.svg" class="icon">
-                                    <h6 class="title">audisio.nicolo@gmail.com</h6>
-                                    <p class="subtitle">Clicca per accedere alle mail e scrivermi.</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-2">
-                        <div class="service-card">
-                            <div class="body">
-                                <a href="https://www.instagram.com/nik_audisio_/" target="_blank">
-                                    <img src="assets/imgs/instagram.svg" class="icon">
-                                    <h6 class="title">nik_audisio</h6>
-                                    <p class="subtitle">Clicca per accedere al mio profilo.</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-2">
-                        <div class="service-card">
-                            <div class="body">
-                                <a href="https://www.facebook.com/nik.audisio/" target="_blank">
-                                    <img src="assets/imgs/facebook.svg" class="icon">
-                                    <h6 class="title">Nicolò Audisio</h6>
-                                    <p class="subtitle">Clicca per accedere al mio profilo.</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-2">
-                        <div class="service-card">
-                            <div class="body">
-                                <a href="https://x.com/Truckgod05" target="_blank">
-                                    <img src="assets/imgs/twitter.svg" class="icon">
-                                    <h6 class="title">nik_audisio</h6>
-                                    <p class="subtitle">Clicca per accedere al mio profilo.</p>   
-                                </a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-2">
-                        <div class="service-card">
-                            <div class="body">
-                                <a href="https://www.linkedin.com/in/nicolò-audisio-6b4617317/" target="_blank">
-                                    <img src="assets/imgs/linkedin.svg" class="icon">
-                                    <h6 class="title">Nicolò Audisio</h6>
-                                    <p class="subtitle">Clicca per accedere al mio profilo.</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ! End of row -->
-            </div>
-        </section>
-        <!-- ! End of Contact -->
-
-        <!-- * Footer -->
-        <div class="container">
-            <footer class="footer">
-                <p class="mb-0">Copyright
-                    <script>document.write(new Date().getFullYear())</script> &copy; Audisio Nicolò 
-                </p>
-                <div class="social-links text-right m-auto ml-sm-auto">
-                    <a href="mailto:audisio.nicolo@gmail.com" class="link"><i class="ti-email"></i></a>
-                    <a href="https://www.instagram.com/nik_audisio_/" target="_blank" class="link"><i class="ti-instagram"></i></a>
-                    <a href="https://www.facebook.com/nik.audisio/" target="_blank" class="link"><i class="ti-facebook"></i></a>
-                    <a href="https://x.com/Truckgod05" target="_blank" class="link"><i class="ti-twitter-alt"></i></a>
-                    <a href="https://www.linkedin.com/in/nicolò-audisio-6b4617317/" target="_blank" class="link"><i class="ti-linkedin"></i></a>
-                </div>
-            </footer>
         </div>
-        <!-- ! End of Footer -->
+        <div class="hero-visual" data-reveal>
+            <div class="hero-photo-wrap">
+                <img src="assets/imgs/hero-nicolo.jpg" alt="Nicolò Audisio in servizio con la Croce Rossa Italiana" class="hero-photo">
+                <span class="cross-badge" aria-hidden="true"></span>
+                <div class="float-card float-card--top">
+                    <svg class="icon"><use href="#i-shield"/></svg>
+                    <div><strong>Protezione Civile</strong><span>Operatore OPEM</span></div>
+                </div>
+                <div class="float-card float-card--mid">
+                    <svg class="icon"><use href="#i-radio"/></svg>
+                    <div><strong>Telecomunicazioni</strong><span>Operatore CRI</span></div>
+                </div>
+                <div class="float-card float-card--bottom">
+                    <svg class="icon"><use href="#i-drone"/></svg>
+                    <div><strong>Pilota Droni</strong><span>Brevetto A1/A3</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stats-bar container" data-reveal>
+        <div class="stat"><span class="stat-num" data-count="4" data-since="2022-01-01">0</span><span class="stat-label">Anni in Croce Rossa</span></div>
+        <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Patenti di guida CRI</span></div>
+        <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Progetti web realizzati</span></div>
+        <div class="stat"><span class="stat-num" data-count="7">0</span><span class="stat-label">Interventi recenti</span></div>
+    </div>
+</section>
 
-        <!-- Core  -->
-        <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-        <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+<!-- About -->
+<section class="section" id="about">
+    <div class="container about-grid">
+        <div class="about-media" data-reveal>
+            <img src="assets/imgs/about-nicolo.jpg" alt="Ritratto di Nicolò Audisio" class="about-photo">
+        </div>
+        <div class="about-content" data-reveal>
+            <p class="section-eyebrow">Chi sono</p>
+            <h2 class="section-title">Tecnologia e soccorso, la stessa attitudine al servizio</h2>
+            <p>Perito informatico, professionista in ambito digitale con esperienza nello sviluppo e nella gestione di soluzioni software, e una spiccata attitudine al coordinamento e all'ottimizzazione dei processi. Dal 2024 al 2026 ha lavorato come Application Engineer &amp; Software Analyst in una startup tecnologica specializzata in sistemi AI per il controllo qualità industriale.</p>
+            <p>Dal 2026 è dipendente della Croce Rossa Italiana — Comitato di Cuneo, come autista soccorritore e nel coordinamento delle attività del comitato. Volontario e Milite del Corpo Militare della Croce Rossa Italiana, con esperienza in coordinamento del personale, gestione delle risorse e pianificazione operativa in ambienti strutturati e gerarchici: servizio 118 in ambulanza, ricerca persone, protezione civile e logistica di eventi a livello internazionale. Ha curato inoltre la comunicazione digitale di alcuni Comitati CRI, gestendo profili social, grafica e siti web.</p>
+            <ul class="quick-facts">
+                <li><svg class="icon icon-sm"><use href="#i-idcard"/></svg>Patente B · CRI 1/3/4/5</li>
+                <li><svg class="icon icon-sm"><use href="#i-drone"/></svg>Pilota droni · Brevetto A1/A3</li>
+                <li><svg class="icon icon-sm"><use href="#i-radio"/></svg>Operatore delle Telecomunicazioni</li>
+                <li><svg class="icon icon-sm"><use href="#i-heart"/></svg>Autorizzato alla defibrillazione AED</li>
+                <li><svg class="icon icon-sm"><use href="#i-pin"/></svg>Costigliole Saluzzo (CN)</li>
+            </ul>
+            <div class="lang-row">
+                <span class="tag">Italiano · Madrelingua</span>
+                <span class="tag">Inglese · B2</span>
+            </div>
+            <a href="curriculum_NA.pdf" class="btn btn-primary mt-3" download>Scarica CV</a>
+        </div>
+    </div>
 
-        <!-- Bootstrap -->
-        <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <div class="container skills-block" data-reveal>
+        <h3 class="skills-title">Competenze tecniche</h3>
+        <div class="skills-grid">
+            <div class="skill"><div class="skill-head"><span>HTML5 / CSS3 / JavaScript</span><span>90%</span></div><div class="skill-bar"><i style="--v:90%"></i></div></div>
+            <div class="skill"><div class="skill-head"><span>PHP / MongoDB</span><span>75%</span></div><div class="skill-bar"><i style="--v:75%"></i></div></div>
+            <div class="skill"><div class="skill-head"><span>React / Angular / React Native</span><span>70%</span></div><div class="skill-bar"><i style="--v:70%"></i></div></div>
+            <div class="skill"><div class="skill-head"><span>Python / Bash / Java</span><span>65%</span></div><div class="skill-bar"><i style="--v:65%"></i></div></div>
+            <div class="skill"><div class="skill-head"><span>Node-RED / PLC</span><span>70%</span></div><div class="skill-bar"><i style="--v:70%"></i></div></div>
+            <div class="skill"><div class="skill-head"><span>Ubuntu / Camere industriali</span><span>85%</span></div><div class="skill-bar"><i style="--v:85%"></i></div></div>
+        </div>
+        <div class="chip-row">
+            <span class="chip">Illustrator</span><span class="chip">Photoshop</span><span class="chip">Premiere Pro</span>
+            <span class="chip">DaVinci Resolve</span><span class="chip">Figma</span><span class="chip">Adobe XD</span>
+            <span class="chip">Canva</span><span class="chip">Audacity</span><span class="chip">Pacchetto Office</span>
+        </div>
 
-        <!-- JS -->
-        <script src="assets/js/script.js"></script>
-    </body>
+        <h3 class="skills-title mt-4">Competenze — Application Engineering &amp; Software Analyst <span class="skills-sub">Inventio.ai</span></h3>
+        <div class="chip-row">
+            <span class="chip">Node-RED</span><span class="chip">PLC</span><span class="chip">Relazione con i clienti</span>
+            <span class="chip">Gestione del servizio clienti</span><span class="chip">Ubuntu</span><span class="chip">Project Management</span>
+            <span class="chip">Project Planning</span><span class="chip">HTML5</span><span class="chip">Camere industriali</span>
+            <span class="chip">Assistenza virtuale</span><span class="chip">Microsoft Office</span><span class="chip">React.js</span>
+            <span class="chip">Illuminotecnica</span>
+        </div>
+    </div>
+</section>
+
+<!-- Esperienza -->
+<section class="section section-alt" id="xp">
+    <div class="container">
+        <p class="section-eyebrow text-center">Il mio percorso</p>
+        <h2 class="section-title text-center">Esperienza</h2>
+
+        <div class="timeline-grid">
+            <div class="timeline-col" data-reveal>
+                <h3 class="timeline-heading"><svg class="icon"><use href="#i-briefcase"/></svg>Percorso professionale</h3>
+
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <span class="tl-period">2026 ~ Oggi</span>
+                    <h4>Croce Rossa Italiana — Comitato di Cuneo</h4>
+                    <p class="tl-role">Dipendente</p>
+                    <ul>
+                        <li>Autista soccorritore</li>
+                        <li>Coordinamento delle attività del comitato</li>
+                    </ul>
+                </div>
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <span class="tl-period">2024 - 2026</span>
+                    <h4>Inventio.ai</h4>
+                    <p class="tl-role">Application Engineer &amp; Software Analyst</p>
+                    <ul>
+                        <li>Sviluppo di macchinari e applicativi per il controllo qualità con intelligenza artificiale</li>
+                        <li>Supporto telefonico ed informatico ai clienti</li>
+                        <li>Supporto in loco in fase di installazione e formazione</li>
+                        <li>Project management delle commesse</li>
+                    </ul>
+                </div>
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <span class="tl-period">2023 · PCTO</span>
+                    <h4>Scotta S.p.A.</h4>
+                    <ul>
+                        <li>Sito web per la gestione dei dati di un campo fotovoltaico tramite HTML5, CSS3, JavaScript e Python</li>
+                        <li>Pagine di gestione del magazzino con il framework Angular</li>
+                    </ul>
+                </div>
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <span class="tl-period">2022 · PCTO</span>
+                    <h4>Graph Art S.n.c.</h4>
+                    <ul>
+                        <li>Progettazione di locandine e grafiche per siti web con Illustrator e Photoshop</li>
+                        <li>Magazziniere</li>
+                    </ul>
+                </div>
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <span class="tl-period">2019 ~ Oggi</span>
+                    <h4>Servizi Fiscali S.r.l.s.</h4>
+                    <ul>
+                        <li>Inserimento dati per pratiche fiscali tramite software nazionali</li>
+                        <li>Realizzazione di tabelle e documenti con il pacchetto Office</li>
+                    </ul>
+                </div>
+
+                <h3 class="timeline-heading mt-4"><svg class="icon"><use href="#i-idcard"/></svg>Formazione</h3>
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <span class="tl-period">2019 - 2024</span>
+                    <h4>I.T.I.S. "G. Rivoira"</h4>
+                    <p>Diploma da Perito Informatico</p>
+                </div>
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <span class="tl-period">2016 - 2019</span>
+                    <h4>Istituto Comprensivo di Venasca e Costigliole Saluzzo</h4>
+                    <p>Diploma di licenza conclusiva del primo ciclo di istruzione</p>
+                </div>
+            </div>
+
+            <div class="timeline-col" data-reveal>
+                <h3 class="timeline-heading"><svg class="icon"><use href="#i-shield"/></svg>Croce Rossa Italiana</h3>
+
+                <div class="tl-item tl-item--cri">
+                    <span class="tl-dot"></span>
+                    <span class="tl-period">2025 ~ Oggi</span>
+                    <h4>Corpo Militare CRI</h4>
+                    <ul>
+                        <li>Servizio in ausilio alle Forze Armate</li>
+                        <li>Formazione per interventi difficili</li>
+                        <li>Coordinamento e organizzazione a livello provinciale</li>
+                        <li>Relazione e organizzazione con FF.AA. e FF.OO.</li>
+                    </ul>
+                </div>
+                <div class="tl-item tl-item--cri">
+                    <span class="tl-dot"></span>
+                    <span class="tl-period">2022 ~ Oggi</span>
+                    <h4>Croce Rossa Italiana - Civile</h4>
+                    <ul>
+                        <li>Servizio su MSA e MSB (soccorso 118)</li>
+                        <li>Operatore di Protezione Civile (OPEM)</li>
+                        <li>Esperto in tecniche di simulazione</li>
+                        <li>Corso di Sicurezza Acquatica (CSA)</li>
+                    </ul>
+                </div>
+
+                <div class="callout-card">
+                    <svg class="icon"><use href="#i-globe"/></svg>
+                    <p>Ha inoltre curato la comunicazione digitale di alcuni Comitati CRI: gestione profili social, produzione grafica e sviluppo siti web.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Interventi -->
+<section class="section" id="interventi">
+    <div class="container">
+        <p class="section-eyebrow text-center">Sul campo</p>
+        <h2 class="section-title text-center">Ultimi interventi</h2>
+        <p class="section-lead text-center">Uno specchio degli ultimi servizi ed esercitazioni svolti come volontario CRI: ricerca persone, protezione civile, grandi eventi e formazione.</p>
+
+        <div class="interventi-list" data-reveal>
+            <div class="int-row">
+                <span class="int-icon"><svg class="icon"><use href="#i-search"/></svg></span>
+                <div class="int-main"><h4>Ricerca persone</h4><span class="int-loc"><svg class="icon icon-xs"><use href="#i-pin"/></svg>Lurisia (CN)</span></div>
+                <span class="int-date">29/08/2026</span>
+                <span class="badge badge-real">Reale</span>
+            </div>
+            <div class="int-row">
+                <span class="int-icon"><svg class="icon"><use href="#i-tent"/></svg></span>
+                <div class="int-main"><h4>Campo "I Care Your Children"</h4><span class="int-loc"><svg class="icon icon-xs"><use href="#i-pin"/></svg>Roccapietra (VCO)</span></div>
+                <span class="int-date">08/08/2026</span>
+                <span class="badge badge-real">Reale</span>
+            </div>
+            <div class="int-row">
+                <span class="int-icon"><svg class="icon"><use href="#i-flame"/></svg></span>
+                <div class="int-main"><h4>Incendio</h4><span class="int-loc"><svg class="icon icon-xs"><use href="#i-pin"/></svg>Valdieri (CN)</span></div>
+                <span class="int-date">06/08/2026</span>
+                <span class="badge badge-real">Reale</span>
+            </div>
+            <div class="int-row">
+                <span class="int-icon"><svg class="icon"><use href="#i-plane"/></svg></span>
+                <div class="int-main"><h4>Air Show Frecce Tricolore</h4><span class="int-loc"><svg class="icon icon-xs"><use href="#i-pin"/></svg>Varazze (SV)</span></div>
+                <span class="int-date">17/05/2026</span>
+                <span class="badge badge-real">Reale</span>
+            </div>
+            <div class="int-row">
+                <span class="int-icon"><svg class="icon"><use href="#i-bike"/></svg></span>
+                <div class="int-main"><h4>Fausto Coppi</h4><span class="int-loc"><svg class="icon icon-xs"><use href="#i-pin"/></svg>Sampeyre (CN)</span></div>
+                <span class="int-date">29/06/2025</span>
+                <span class="badge badge-real">Reale</span>
+            </div>
+            <div class="int-row">
+                <span class="int-icon"><svg class="icon"><use href="#i-alert"/></svg></span>
+                <div class="int-main"><h4>Ricerca e soccorso per terremoto</h4><span class="int-loc"><svg class="icon icon-xs"><use href="#i-pin"/></svg>Acceglio (CN)</span></div>
+                <span class="int-date">03 → 04/05/2025</span>
+                <span class="badge badge-drill">Esercitazione</span>
+            </div>
+            <div class="int-row">
+                <span class="int-icon"><svg class="icon"><use href="#i-search"/></svg></span>
+                <div class="int-main"><h4>Ricerca persone</h4><span class="int-loc"><svg class="icon icon-xs"><use href="#i-pin"/></svg>Pollenzo (CN)</span></div>
+                <span class="int-date">27/04/2025</span>
+                <span class="badge badge-real">Reale</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certificazioni -->
+<section class="section section-alt" id="certificazioni">
+    <div class="container">
+        <p class="section-eyebrow text-center">Formazione &amp; brevetti</p>
+        <h2 class="section-title text-center">Certificazioni</h2>
+
+        <div class="cert-grid" data-reveal>
+            <div class="cert-card">
+                <svg class="icon icon-lg"><use href="#i-idcard"/></svg>
+                <h4>Patenti CRI 1 / 3 / 4 / 5</h4>
+                <p>Guida in emergenza — Croce Rossa Italiana</p>
+            </div>
+            <div class="cert-card cert-card--highlight">
+                <svg class="icon icon-lg"><use href="#i-drone"/></svg>
+                <h4>Brevetto Pilota Drone A1/A3</h4>
+                <p>Attestato di pilotaggio APR — ENAC</p>
+            </div>
+            <div class="cert-card">
+                <svg class="icon icon-lg"><use href="#i-heart"/></svg>
+                <h4>Autorizzazione AED</h4>
+                <p>Defibrillazione — Regione Piemonte n° 190614</p>
+            </div>
+            <div class="cert-card">
+                <svg class="icon icon-lg"><use href="#i-shield"/></svg>
+                <h4>Operatore OPEM</h4>
+                <p>Protezione Civile — Croce Rossa Italiana</p>
+            </div>
+            <div class="cert-card">
+                <svg class="icon icon-lg"><use href="#i-radio"/></svg>
+                <h4>Operatore delle Telecomunicazioni</h4>
+                <p>Croce Rossa Italiana</p>
+            </div>
+            <div class="cert-card">
+                <svg class="icon icon-lg"><use href="#i-users"/></svg>
+                <h4>Esperto in tecniche di simulazione</h4>
+                <p>Croce Rossa Italiana</p>
+            </div>
+            <div class="cert-card">
+                <svg class="icon icon-lg"><use href="#i-waves"/></svg>
+                <h4>Corso di Sicurezza Acquatica</h4>
+                <p>CSA — Croce Rossa Italiana</p>
+            </div>
+            <div class="cert-card">
+                <svg class="icon icon-lg"><use href="#i-code"/></svg>
+                <h4>Boolean Coding Week</h4>
+                <p>Attestato di partecipazione</p>
+            </div>
+            <div class="cert-card">
+                <svg class="icon icon-lg"><use href="#i-server"/></svg>
+                <h4>ERP System Developer</h4>
+                <p>Attestato professionale</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Servizi -->
+<section class="section" id="service">
+    <div class="container">
+        <p class="section-eyebrow text-center">Cosa faccio</p>
+        <h2 class="section-title text-center">Servizi</h2>
+        <div class="service-grid" data-reveal>
+            <div class="service-card">
+                <span class="service-icon"><svg class="icon"><use href="#i-code"/></svg></span>
+                <h4>Sviluppo Web</h4>
+                <p>Siti vetrina e gestionali su misura, dal frontend al backend.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon"><svg class="icon"><use href="#i-layout"/></svg></span>
+                <h4>UX / UI Design</h4>
+                <p>Progettazione di interfacce per applicazioni mobile, desktop e web.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon"><svg class="icon"><use href="#i-palette"/></svg></span>
+                <h4>Grafica</h4>
+                <p>Locandine, loghi e materiale grafico su misura per ogni esigenza.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon"><svg class="icon"><use href="#i-briefcase"/></svg></span>
+                <h4>Consulenza &amp; Project Management</h4>
+                <p>Supporto tecnico-operativo, formazione e gestione delle commesse.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio -->
+<section class="section section-alt" id="portfolio">
+    <div class="container">
+        <p class="section-eyebrow text-center">Progetti realizzati</p>
+        <h2 class="section-title text-center">Portfolio</h2>
+
+        <div class="portfolio-grid" data-reveal>
+            <a href="https://gestioneavanzatavolontar.altervista.org/sito-vetrina/index.html" target="_blank" rel="noopener" class="portfolio-card">
+                <div class="portfolio-visual portfolio-visual--icon gradient-red">
+                    <svg class="icon icon-xl"><use href="#i-clipboard"/></svg>
+                </div>
+                <div class="portfolio-body">
+                    <span class="portfolio-tag">Gestionale · PHP</span>
+                    <h4>GAV — Gestione Avanzata Volontari</h4>
+                    <p>Gestionale web per Comitati Croce Rossa Italiana e ANPAS: anagrafica volontari, turni e mezzi.</p>
+                    <span class="portfolio-link">Visita il sito<svg class="icon icon-sm"><use href="#i-arrow"/></svg></span>
+                </div>
+            </a>
+            <a href="https://nicoloaudisio.github.io/motorimessaCadore/" target="_blank" rel="noopener" class="portfolio-card">
+                <div class="portfolio-visual">
+                    <img src="assets/imgs/logoMotorimessa.png" alt="Motorimessa Cadore">
+                </div>
+                <div class="portfolio-body">
+                    <span class="portfolio-tag">Sito vetrina</span>
+                    <h4>Motorimessa Cadore</h4>
+                    <p>Sito vetrina per un'autorimessa con servizio NCC a Torino: presentazione servizi e contatti.</p>
+                    <span class="portfolio-link">Visita il sito<svg class="icon icon-sm"><use href="#i-arrow"/></svg></span>
+                </div>
+            </a>
+            <a href="https://coachdany.altervista.org/login/login.php" target="_blank" rel="noopener" class="portfolio-card">
+                <div class="portfolio-visual portfolio-visual--icon gradient-dark">
+                    <svg class="icon icon-xl"><use href="#i-dumbbell"/></svg>
+                </div>
+                <div class="portfolio-body">
+                    <span class="portfolio-tag">Gestionale · PHP</span>
+                    <h4>CoachDany — Gestionale Palestra</h4>
+                    <p>Piattaforma gestionale per una palestra di Torino: iscritti, corsi, pagamenti e comunicazioni.</p>
+                    <span class="portfolio-link">Apri il gestionale<svg class="icon icon-sm"><use href="#i-arrow"/></svg></span>
+                </div>
+            </a>
+            <a href="https://follow-me-itis-rivoira.web.app" target="_blank" rel="noopener" class="portfolio-card">
+                <div class="portfolio-visual">
+                    <img src="assets/imgs/followMe.png" alt="Follow Me - navigatore ITIS Rivoira">
+                </div>
+                <div class="portfolio-body">
+                    <span class="portfolio-tag">Progetto scolastico</span>
+                    <h4>Follow Me</h4>
+                    <p>Web app di navigazione interna per l'istituto ITIS "G. Rivoira".</p>
+                    <span class="portfolio-link">Visita il sito<svg class="icon icon-sm"><use href="#i-arrow"/></svg></span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Galleria -->
+<section class="section" id="galleria">
+    <div class="container">
+        <p class="section-eyebrow text-center">Sul campo</p>
+        <h2 class="section-title text-center">Galleria</h2>
+        <div class="gallery-grid" data-reveal>
+            <button class="gallery-item gallery-item--tall" data-caption="Rimessa ambulanze — Comitato CRI di Manta"><img src="assets/imgs/gallery/rimessa.jpg" alt="Rimessa ambulanze Croce Rossa di Manta"></button>
+            <button class="gallery-item" data-caption="Servizio 118 in ambulanza"><img src="assets/imgs/gallery/soccorso118.jpg" alt="Ambulanza CRI in servizio 118"></button>
+            <button class="gallery-item" data-caption="Alla guida durante un intervento 118"><img src="assets/imgs/gallery/guida.jpg" alt="Alla guida di un'ambulanza durante un intervento 118"></button>
+            <button class="gallery-item" data-caption="Assistenza sanitaria al concerto di Francesco Gabbani — Suoni del Monviso"><img src="assets/imgs/gallery/montagna.jpg" alt="Assistenza sanitaria CRI al concerto di Francesco Gabbani, Suoni del Monviso"></button>
+            <button class="gallery-item gallery-item--wide" data-caption="Logistica mezzi pesanti per grandi eventi"><img src="assets/imgs/gallery/logistica.jpg" alt="Mezzi pesanti Croce Rossa per logistica eventi"></button>
+            <button class="gallery-item" data-caption="Trasporto di un paziente elitrasportato"><img src="assets/imgs/gallery/elicottero.jpg" alt="Elicottero di soccorso durante il trasporto di un paziente elitrasportato"></button>
+        </div>
+    </div>
+</section>
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose"><svg class="icon"><use href="#i-close"/></svg></button>
+    <figure><img id="lightboxImg" src="" alt=""><figcaption id="lightboxCaption"></figcaption></figure>
+</div>
+
+<!-- Contatti -->
+<section class="section section-dark" id="contact">
+    <div class="container">
+        <p class="section-eyebrow text-center">Parliamone</p>
+        <h2 class="section-title text-center">Contattami</h2>
+        <p class="section-lead text-center">Per progetti, collaborazioni o semplicemente per un saluto: scrivimi, ti risponderò appena possibile.</p>
+
+        <div class="contact-grid" data-reveal>
+            <div class="contact-info">
+                <a class="contact-item" href="mailto:audisio.nicolo@gmail.com">
+                    <svg class="icon"><use href="#i-mail"/></svg>
+                    <div><strong>Email</strong><span>audisio.nicolo@gmail.com</span></div>
+                </a>
+                <a class="contact-item" href="tel:+393388150850">
+                    <svg class="icon"><use href="#i-phone"/></svg>
+                    <div><strong>Telefono</strong><span>+39 338 815 0850</span></div>
+                </a>
+                <div class="contact-item">
+                    <svg class="icon"><use href="#i-pin"/></svg>
+                    <div><strong>Zona</strong><span>Costigliole Saluzzo (CN)</span></div>
+                </div>
+                <div class="contact-socials">
+                    <a href="https://www.linkedin.com/in/nicolò-audisio-6b4617317/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+                    <a href="https://www.instagram.com/nicolo.audisio/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+                    <a href="https://www.threads.com/@nicolo.audisio" target="_blank" rel="noopener" aria-label="Threads"><svg class="icon"><use href="#i-threads"/></svg></a>
+                    <a href="https://www.facebook.com/nik.audisio/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+                    <a href="https://x.com/Truckgod05" target="_blank" rel="noopener" aria-label="X"><svg class="icon"><use href="#i-x"/></svg></a>
+                    <a href="https://nicoloaudisio.github.io/Portfolio/" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm" action="https://formsubmit.co/audisio.nicolo@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Nuovo messaggio dal portfolio">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://nicoloaudisio.github.io/Portfolio/#contact">
+                <div class="form-row">
+                    <input type="text" name="Nome" placeholder="Nome e cognome" required>
+                    <input type="email" name="Email" placeholder="La tua email" required>
+                </div>
+                <input type="text" name="Oggetto" placeholder="Oggetto" required>
+                <textarea name="Messaggio" rows="5" placeholder="Scrivi il tuo messaggio..." required></textarea>
+                <button type="submit" class="btn btn-primary btn-block">Invia messaggio<svg class="icon icon-sm"><use href="#i-arrow"/></svg></button>
+                <p class="form-note">Il form invia il messaggio direttamente alla mia email, senza bisogno di un client di posta.</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer-row">
+        <a class="brand brand--footer" href="#home"><span class="brand-mark">N</span>Nicolò Audisio</a>
+        <div class="footer-links">
+            <a href="#about">Chi sono</a>
+            <a href="#xp">Esperienza</a>
+            <a href="#portfolio">Progetti</a>
+            <a href="#contact">Contatti</a>
+        </div>
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/nicolò-audisio-6b4617317/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+            <a href="https://www.instagram.com/nicolo.audisio/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+            <a href="https://www.threads.com/@nicolo.audisio" target="_blank" rel="noopener" aria-label="Threads"><svg class="icon"><use href="#i-threads"/></svg></a>
+            <a href="https://www.facebook.com/nik.audisio/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+            <a href="https://x.com/Truckgod05" target="_blank" rel="noopener" aria-label="X"><svg class="icon"><use href="#i-x"/></svg></a>
+        </div>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Nicolò Audisio — Realizzato con <span class="heart">♥</span> a mano</p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Torna su"><svg class="icon"><use href="#i-arrow"/></svg></button>
+
+<script src="assets/js/script.js"></script>
+</body>
 </html>
